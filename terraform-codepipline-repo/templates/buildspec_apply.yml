@@ -15,7 +15,8 @@ phases:
       - "yum -y install terraform"
   build:
     commands:
-      - "cd ${CODEBUILD_SRC_DIR}/${CODE_SRC_DIR}"
+      - "ls"
+      - "cd terraform-codepipline-repo/"
       - "echo ## TERRAFORM APPLY : Starting with the Terraform Apply"
       - "terraform apply --auto-approve"
       #- "terraform apply -input=false tfapply"
