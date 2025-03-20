@@ -18,6 +18,7 @@ phases:
       - "ls"
       - "cd terraform-codepipline-repo/"
       - "echo ## TERRAFORM APPLY : Starting with the Terraform Apply"
+      - "terraform init -reconfigure"  # Ensure correct backend config
       - "terraform apply --auto-approve"
       #- "terraform apply -input=false tfapply"
 
