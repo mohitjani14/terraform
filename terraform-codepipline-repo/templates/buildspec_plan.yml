@@ -15,7 +15,7 @@ phases:
       - "yum -y install terraform"
   build:
     commands:
-      - "ll"
+      - "ls"
       - "cd terraform-codepipline-repo/terraform-codepipline-repo"
       - "terraform init"
       - "echo ## TERRAFORM PLAN : Generate the Terraform Plan"
